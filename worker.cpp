@@ -11,7 +11,8 @@ int main()
 	string path;
 	string sensor;
 	getline(cin, path);
-	cin >> sensor;
+	getline(cin,sensor);
+
 	ifstream ifs(path.c_str());
 	string line;
 	while (getline(ifs, line))
@@ -23,6 +24,5 @@ int main()
 			return 0;
 		}
 	}
-	cout << -2 << endl;
-
+	cout << -1 << endl;
 }
